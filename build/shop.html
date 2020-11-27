@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="js/lib/svg-inject.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <title>Нердс</title>
+</head>
+
+<body>
+
+  <nav class="navigation">
+    <div class="navigation-inner">
+
+      <div class="logo-navigation">
+        <a href="/index.html">
+        <img src="/img/index/nerds-logo.svg" alt="Логотип компании" onload="SVGInject(this)" />
+      </a>
+      </div>
+
+      <div class="site-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list__item">
+            <a href="/index.html#studio" class="navigation-list__link">Студия</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="/index.html#clients" class="navigation-list__link">Клиенты</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="/shop.html" class="navigation-list__link">Магазин</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="/index.html#contacts" class="navigation-list__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="user-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list__item">
+            <button class="navigation-list__link">
+              
+              <div class="navigation-list__icon">
+              <img src="/img/index/shopping-cart.svg" onload="SVGInject(this)" />
+              </div>
+              Корзина
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+<main class="shop-main">
+
+    <div class="shop-main__title">
+        <h1>Магазин готовых шаблонов</h1>
+    </div>
+
+    <div class="shop-main-inner">
+
+
+
+        <div class="shop-choose">
+            <form>
+                <section class="shop-choose__price">
+                    <h3>Стоимость:</h3>
+
+                    <div id="slider-range"></div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                    </div>
+                    <div class="shop-choose-range">
+                        <div class="shop-choose-range__item">
+                            <p>От</p>
+                            <input class="shop-range-from" type="number" placeholder="0" />
+                        </div>
+                        <div class="shop-choose-range__item">
+                            <p>До</p>
+                            <input class="shop-range-to" type="number" placeholder="15000" />
+                        </div>
+                    </div>
+                </section>
+                <section class="shop-choose__products">
+                    <h3>Сетка:</h3>
+                    <ul>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="radio" name="group" checked="checked">
+                                <span class="checkmark"></span>
+                                Адаптивная
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="radio" name="group">
+                                <span class="checkmark"></span>
+                                Фиксированная
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="radio" name="group">
+                                <span class="checkmark"></span>
+                                Резиновая
+                            </label>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="shop-choose__brands">
+                    <h3>Особенности:</h3>
+                    <ul>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="baxter" checked="checked">
+                                <span class="checkmark"></span>
+                                Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="natty">
+                                <span class="checkmark"></span>
+                                Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="suavecito">
+                                <span class="checkmark"></span>
+                                Новости
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="malin">
+                                <span class="checkmark"></span>
+                                Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="murray">
+                                <span class="checkmark"></span>
+                                Корзина
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+                <div>
+                    <button class="button button--grey" type="button">Показать</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="shop-cards">
+            <div class="shop-cards__sort">
+                <div class="shop-cards__sort-title">
+                    <h3>Сортировать:</h3>
+                </div>
+                <div class="shop-cards__sort-section">
+                    <ul class="shop-cards__sort-parametrs">
+                        <li>По цене</li>
+                        <li>По типу</li>
+                        <li>По названию</li>
+                    </ul>
+                    <div>
+                        <a href="#"><img src="/img/catalog/icon-down.png"></a>
+                        <a href="#"><img src="/img/catalog/icon-up.png"></a>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <ul class="shop-cards__product-cards">
+                    <li>
+                        <div onclick="aboutModalOpen()" class="shop-cards__item">
+                            <section id="about" class="modal-about visually-hidden">
+                            <div class="modal-about-inner">
+                                <h3>Sedona</h3>
+                                <p>Информационный сайт для туристов</p>
+                                <button type="button" class="button button--red">9 900 руб.</button>
+                            </div>
+                            </section>
+                            <a href="/shop.html#sedona" id="sedona">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/sedona.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/pink.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/barbershop.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/mishka.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/aplus.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/kvast.jpg">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <div>
+                <ul class="shop-cards__pages">
+                    <li class="shop-cards__page-item"><button class="button button--grey button--active"
+                            type="button">1</button></li>
+                    <li class="shop-cards__page-item"><button class="button button--grey" type="button">2</button></li>
+                    <li class="shop-cards__page-item"><button class="button button--grey" type="button">3</button></li>
+                    <li><button class="button button--grey" type="button">Следующая</button></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+</main>
+<footer id="contacts">
+
+  <div class="footer-map">
+    <div id="map"></div>
+    <div class="footer-inner">
+      <div class="footer__contact-info">
+        <h3>NЁrds design studio</h3>
+        <p>
+          191186, Санкт-Петербург,<br />ул.Б.Конюшенная, д.
+          19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <button onclick="writeToUsModalOpen()" class="button button--red" type="button">Напишите нам</button>
+      </div>
+      <!-- <div class="footer__map-marker">
+        <img src="/img/index/map-marker.png" />
+      </div> -->
+    </div>
+  </div>
+</footer>
+<footer class="footer">
+  <div class="footer-inner">
+
+
+    <ul class="footer__social-media">
+      <li>
+        <a class="footer__icons" href="#Vk">
+          <img src="/img/index/vk-icon.png">
+        </a>
+      </li>
+      <li>
+        <a class="footer__icons" href="#FB">
+          <img src="/img/index/fb-icon.png">
+        </a>
+      </li>
+      <li>
+        <a class="footer__icons" href="#IG">
+          <img src="/img/index/insta-icon.png">
+        </a>
+      </li>
+    </ul>
+    <div class="footer__title">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7Eiif_GGNLuXUBqBVtEGUenNcXV27w10&callback=initMap"></script>
+</body>
+
+</html>
