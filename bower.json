@@ -1,0 +1,19 @@
+{
+  "name": "barber",
+  "version": "1.0.0",
+  "authors": [
+    "Katusha"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}

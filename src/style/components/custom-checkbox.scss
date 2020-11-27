@@ -1,0 +1,42 @@
+
+ .container {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.container input[type="checkbox"] + .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #b8b8b8;
+}
+.container input[type="checkbox"]:focus + .checkmark {
+   border-color:  #4d4d4d;
+   outline: thin dotted;
+   outline: 5px auto #3480eb;
+}
+.container input[type="checkbox"]:hover + .checkmark {
+   border-color:  #4d4d4d;
+  
+}
+.container input[type="checkbox"]:checked + .checkmark::before,
+.container input[type="checkbox"]:checked + .checkmark::after {
+   position: absolute;
+   content: "";
+   top: 9px;
+   left: -1px;
+   width: 23px;
+   height: 2px;
+   background-color: #b8b8b8;
+}
+
+.container input[type="checkbox"]:checked + .checkmark::before {
+   transform: rotate(45deg);
+}
+.container input[type="checkbox"]:checked + .checkmark::after {
+   transform: rotate(-45deg);
+}
+

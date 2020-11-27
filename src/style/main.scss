@@ -1,0 +1,16 @@
+@import "../../bower_components/normalize.css/normalize.css";
+@import "./components/main.scss";
+@import "./reset.scss";
+@import "./footer.scss";
+@import "./pages/main.scss";
+@import "./header.scss";
+@import "./write-to-us.scss";
+@import "./about.scss";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

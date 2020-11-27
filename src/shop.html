@@ -1,0 +1,267 @@
+//= ./partials/head.html
+//= ./template/header.html
+
+<main class="shop-main">
+
+    <div class="shop-main__title">
+        <h1>Магазин готовых шаблонов</h1>
+    </div>
+
+    <div class="shop-main-inner">
+
+
+
+        <div class="shop-choose">
+            <form>
+                <section class="shop-choose__price">
+                    <h3>Стоимость:</h3>
+
+                    <div id="slider-range"></div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                    </div>
+                    <div class="shop-choose-range">
+                        <div class="shop-choose-range__item">
+                            <p>От</p>
+                            <input class="shop-range-from" type="number" placeholder="0" />
+                        </div>
+                        <div class="shop-choose-range__item">
+                            <p>До</p>
+                            <input class="shop-range-to" type="number" placeholder="15000" />
+                        </div>
+                    </div>
+                </section>
+                <section class="shop-choose__products">
+                    <h3>Сетка:</h3>
+                    <ul>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="radio" name="group" checked="checked">
+                                <span class="checkmark"></span>
+                                Адаптивная
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="radio" name="group">
+                                <span class="checkmark"></span>
+                                Фиксированная
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="radio" name="group">
+                                <span class="checkmark"></span>
+                                Резиновая
+                            </label>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="shop-choose__brands">
+                    <h3>Особенности:</h3>
+                    <ul>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="baxter" checked="checked">
+                                <span class="checkmark"></span>
+                                Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="natty">
+                                <span class="checkmark"></span>
+                                Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="suavecito">
+                                <span class="checkmark"></span>
+                                Новости
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="malin">
+                                <span class="checkmark"></span>
+                                Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">
+                                <input class="visually-hidden" type="checkbox" name="murray">
+                                <span class="checkmark"></span>
+                                Корзина
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+                <div>
+                    <button class="button button--grey" type="button">Показать</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="shop-cards">
+            <div class="shop-cards__sort">
+                <div class="shop-cards__sort-title">
+                    <h3>Сортировать:</h3>
+                </div>
+                <div class="shop-cards__sort-section">
+                    <ul class="shop-cards__sort-parametrs">
+                        <li>По цене</li>
+                        <li>По типу</li>
+                        <li>По названию</li>
+                    </ul>
+                    <div>
+                        <a href="#"><img src="/img/catalog/icon-down.png"></a>
+                        <a href="#"><img src="/img/catalog/icon-up.png"></a>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <ul class="shop-cards__product-cards">
+                    <li>
+                        <div onclick="aboutModalOpen()" class="shop-cards__item">
+                            //= ./modals/about.html
+                            <a href="/shop.html#sedona" id="sedona">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/sedona.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/pink.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/barbershop.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/mishka.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/aplus.jpg">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shop-cards__item">
+                            <a href="/index.html">
+                                <div class="shop-cards__item--up">
+                                    <ul>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                        <li>
+                                            <div class="circles"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="/img/catalog/kvast.jpg">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <div>
+                <ul class="shop-cards__pages">
+                    <li class="shop-cards__page-item"><button class="button button--grey button--active"
+                            type="button">1</button></li>
+                    <li class="shop-cards__page-item"><button class="button button--grey" type="button">2</button></li>
+                    <li class="shop-cards__page-item"><button class="button button--grey" type="button">3</button></li>
+                    <li><button class="button button--grey" type="button">Следующая</button></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+</main>
+//= ./template/footer.html
+//= ./partials/footer.html

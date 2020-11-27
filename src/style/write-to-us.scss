@@ -1,0 +1,112 @@
+.modal {
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 50px;
+  }
+
+  &-form {
+    &-inner {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    &__item {
+      margin-bottom: 35px;
+      span {
+        display: block;
+        margin-bottom: 10px;
+      }
+      &:first-child {
+        max-width: 50%;
+      }
+      &:nth-child(2) {
+        max-width: 50%;
+      }
+      &:last-child {
+        width: 100%;
+      }
+      
+    }
+    textarea {
+      padding-right: 20px;
+      border: 2px solid #d7dcde;
+      min-height: 118px;
+     width: 100%;
+      resize: none;
+      padding-left: 10px;
+      padding-top: 10px;
+      &::placeholder {
+        opacity: 0.5;
+        color: #444444;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+    input {
+      padding-right: 20px;
+      border: 2px solid #d7dcde;
+      min-height: 50px;
+      min-width: 360px;
+      padding-left: 10px;
+      
+      &::placeholder {
+        opacity: 0.5;
+        color: #444444;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+    button {
+      min-width: 260px;
+    }
+  }
+  &-close {
+    width: 22px;
+    height: 22px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    top: 78px;
+    right: 90px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fb565a;
+      width: 19px;
+      height: 3px;
+      top: 10px;
+      left: 2px;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+  &-window {
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    width: 960px;
+    position: fixed;
+    padding: 80px 100px;
+    background-color: #fff;
+    color: #000;
+
+    top: 120px;
+    left: 50%;
+    margin-left: -480px;
+  }
+}
+
+.modal-login {
+  width: 760px;
+}

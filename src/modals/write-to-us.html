@@ -1,0 +1,29 @@
+<section id="write-to-us" class="modal-window visually-hidden">
+  <div class="modal modal-login">
+    <h2>Напишите нам</h2>
+    <form class="modal-form" method="POST" action="https://echo.htmlacademy.ru">
+      <div class="modal-form-inner">
+        <div class="modal-form__item">
+          <label>
+            <span>Ваше имя:</span>
+            <input type="text" placeholder="Имя Фамилия" required />
+          </label>
+        </div>
+
+        <div class="modal-form__item">
+          <label>
+            <span>Ваш e-mail:</span>
+            <input type="email" placeholder="email@example.com" required />
+          </label>
+        </div>
+
+        <div class="modal-form__item">
+          <span>Текст письма:</span>
+          <textarea type="text" placeholder="В свободной форме"></textarea>
+        </div>
+      </div>
+      <button class="button--red button" type="submit">Отправить</button>
+    </form>
+    <button onclick="writeToUsModalOpen()" class="modal-close" type="button"></button>
+  </div>
+</section>
